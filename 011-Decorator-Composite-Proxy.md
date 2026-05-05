@@ -9,6 +9,11 @@ This document continues the exploration of Structural design patterns, focusing 
 ### Introduction
 The **Decorator** pattern (also known as Wrapper) lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors. It provides a flexible alternative to subclassing for extending functionality dynamically at runtime.
 
+### Real-World Analogy
+Think of a plain coffee. Now add milk. Now add sugar. Each addition enhances the original but doesn’t change the base.
+
+The Decorator Pattern works the same way: stacking behaviors while keeping the core intact.
+
 ### When to Use
 - When you need to assign extra behaviors to objects at runtime without breaking the code that uses these objects.
 - When it's awkward or impossible to extend an object's behavior using inheritance (e.g., when a class is `final` or when there are too many combinations of behaviors).
@@ -103,6 +108,11 @@ notifier.send("Server is down!");
 
 ### Introduction
 The **Composite** pattern lets you compose objects into tree structures and then work with these structures as if they were individual objects. It allows clients to treat individual objects and compositions of objects uniformly.
+
+### Real-World Analogy
+Think of an army. It consists of divisions, which consist of brigades, which consist of regiments, which consist of squads, which consist of individual soldiers. When a general gives a "march" order, they don't have to address each soldier individually. They give the order to the top-level command, and it trickles down the hierarchy. 
+
+The Composite pattern allows you to treat the entire army, a single brigade, or an individual soldier uniformly when issuing commands.
 
 ### When to Use
 - When you have to implement a tree-like object structure.
@@ -203,6 +213,11 @@ rootFolder.print();
 
 ### Introduction
 The **Proxy** pattern lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+
+### Real-World Analogy
+Think of a credit card. It's a proxy for a bank account, which is itself a proxy for a pile of cash. Both implement the same interface: they can be used for making payments. 
+
+A proxy acts as a substitute for the real subject. A credit card controls access to the actual funds, provides security checks, and offers convenience compared to carrying physical cash. The Proxy pattern works similarly by controlling access to the underlying object, potentially adding caching, lazy loading, or security checks.
 
 ### When to Use
 - **Lazy initialization (Virtual Proxy):** When you have a heavyweight object that wastes system resources by being always up, even though you only need it from time to time.
