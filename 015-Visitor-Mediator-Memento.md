@@ -11,6 +11,13 @@ Here we cover three advanced behavioral patterns: **Visitor**, **Mediator**, and
 ### Introduction
 The **Visitor** pattern lets you separate algorithms from the objects on which they operate. It allows you to add new behaviors to existing class hierarchies without altering any existing code. This is achieved by creating an external "visitor" class that implements the new behavior and passing the original objects to this visitor.
 
+### Real-World Analogy
+Think about a home inspection. You have a house with different components: plumbing, electrical wiring, structural framing, and HVAC. Each specialist (a plumber, an electrician, a structural engineer, an HVAC technician) "visits" the house and inspects only what they understand.
+
+The house does not need to know how to evaluate its own plumbing or wiring. It just opens the door and lets each inspector do their job. Adding a new type of inspection (say, a fire safety audit) does not require remodeling the house. You just bring in a new inspector.
+
+The Visitor pattern works the same way: the elements (house components) accept visitors (inspectors), and new operations are new visitors.
+
 ### When to Use
 - When you need to perform an operation on all elements of a complex object structure (e.g., an object tree).
 - When you want to clean up the business logic of auxiliary behaviors.
@@ -120,6 +127,13 @@ clientCode(components, visitor2);
 
 ### Introduction
 The **Mediator** pattern reduces chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object. This prevents components from explicitly referring to each other, promoting loose coupling.
+
+### Real-World Analogy
+Think about an air traffic control tower. Planes approaching an airport do not communicate with each other to negotiate landing order, runway assignments, or holding patterns. That would be chaos, especially with dozens of planes in the air simultaneously. Instead, every pilot talks only to the control tower.
+
+The tower knows the position, speed, and fuel status of every plane and coordinates them accordingly: "Flight 237, hold at 5,000 feet. Flight 412, you are cleared for runway 28L."
+
+The tower is the mediator. Planes are the components. If a new plane enters the airspace, the tower handles it. If a plane diverts, the tower adjusts. The other planes never need to know.
 
 ### When to Use
 - When it's hard to change some of the classes because they are tightly coupled to a bunch of other classes.
@@ -234,6 +248,11 @@ c2.doD();
 
 ### Introduction
 The **Memento** pattern lets you save and restore the previous state of an object without revealing the details of its implementation. It's heavily used in implementing "Undo" features.
+
+### Real-World Analogy
+Think about playing a difficult level in a video game. Before entering a boss fight, you save your progress. The game engine creates a "save state" (memento) containing your current health, inventory, and location.
+
+If you lose the fight, you don't have to restart the game from the beginning. You simply load your previous save state. The save state is an opaque object to you—you can't manually edit the binary file to give yourself more health. Only the game engine (the originator) knows how to read and restore from that specific save file. The save menu (the caretaker) simply holds onto the list of save files for you.
 
 ### When to Use
 - When you want to produce snapshots of the object's state to be able to restore a previous state of the object.
