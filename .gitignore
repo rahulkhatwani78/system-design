@@ -137,3 +137,12 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+index.js
+index.ts
+
+package.json
+package-lock.json
+tsconfig.json
+
+interview-questions.md
