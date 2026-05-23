@@ -2,6 +2,8 @@
 
 System design is the process of planning and building the architecture of software systems. Below, we break down three of the most fundamental concepts using simple, real-world analogies in layman's language.
 
+> **Reference Material:** This guide is based on the article [System Design for Beginners: Everything you need in one article](https://medium.com/@shivambhadani_/system-design-for-beginners-everything-you-need-in-one-article-c74eb702540b) by Shivam Bhadani.
+
 ---
 
 ## 1. Why Study System Design?
