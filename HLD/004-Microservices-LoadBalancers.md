@@ -1,4 +1,4 @@
-# System Design for Beginners: Microservices & Load Balancers
+# Microservices & Load Balancers
 
 This guide explains microservices architectures, the role of API Gateways, and deep dives into Load Balancers and their routing algorithms using simple, everyday analogies.
 

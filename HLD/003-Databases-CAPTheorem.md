@@ -1,4 +1,4 @@
-# System Design for Beginners: Databases & CAP Theorem
+# Databases & CAP Theorem
 
 This guide explains the CAP Theorem, database scaling techniques, and the differences between SQL and NoSQL databases using simple, everyday analogies.
 

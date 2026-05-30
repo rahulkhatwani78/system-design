@@ -1,4 +1,4 @@
-# System Design for Beginners: Message Brokers, Apache Kafka & Realtime Pub/Sub
+# Message Brokers, Apache Kafka & Realtime Pub/Sub
 
 This guide explains Message Brokers, Apache Kafka internals, and Realtime Pub/Sub systems, using simple, everyday analogies to make complex distributed systems concepts easy for beginners to understand.
 

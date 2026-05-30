@@ -1,4 +1,4 @@
-# System Design for Beginners: Scaling & Estimations
+# Scaling & Estimations
 
 This guide explains scaling types, auto-scaling mechanisms, and back-of-the-envelope estimations using simple, everyday language and analogies.
 

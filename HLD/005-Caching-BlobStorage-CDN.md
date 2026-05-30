@@ -1,4 +1,4 @@
-# System Design for Beginners: Caching, Blob Storage & CDN
+# Caching, Blob Storage & CDN
 
 This guide explains how Caching (Redis), Blob Storage (AWS S3), and Content Delivery Networks (CDNs) speed up systems and handle massive files using simple, everyday analogies.
 

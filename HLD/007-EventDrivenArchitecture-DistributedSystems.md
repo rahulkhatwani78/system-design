@@ -1,4 +1,4 @@
-# System Design for Beginners: Event-Driven Architecture & Distributed Systems
+# Event-Driven Architecture & Distributed Systems
 
 This guide explains Event-Driven Architecture (EDA), key event patterns, and the fundamentals of Distributed Systems using simple, everyday analogies to make these core system design concepts easy for beginners to understand.
 
